@@ -3,14 +3,43 @@
     <head>
         <title>HOME/HOTEL STANDBY</title>
         <meta charset="utf-8">
+        <!-- CSS 관련 참고사항 주석입니다.
+        1. 디자인에 관련된 CSS는 스타일태그에 넣어서 공통적용한다
+        2. body의 a태그에서 페이지제목을 보았다는 "saw"라고 보았다는 뜻. 같은 클래스로 묶고,
+           style에서 .saw선택자(점을붙여야 모든태그에서의 saw를 말한다)를 쓰고 property:valu;를 정한다
+        3. style에서 우선순위는 아래에있다.(위에서부터 순서되로 적용되니깐 결국 밑에 색깔이 최종)
+        4. a 태그내에 선택자는 띄어쓰기로 계속 쓸 수있다. id선택자(고유선택자)를 사용하여 active 태그를 만들고,
+           style에서 id가 #active인 놈을 찾아 색깔바꿔
+        5. 우선순위 : id선택자(#active) > class선택자(.saw) > tag선택자(a)
+
+
+        -->
+        <style>
+            
+            #active {
+                color:red;
+            }       
+            .saw {
+                color:gray;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            h1 {
+                font-size:45px; 
+                text-align: center;   
+            }
+        </style>
     </head>
+
     <body>
         <h1><a href="index.html">운항승무원 STANDBY 및 RESERVE 운영지침</a></h1>
         <ol>
-            <li><a href="1.html">공항 대기 (AIRPORT STANDBY)</a></li>
-            <li><a href="2.html">자택/호텔 대기 (HOME/HOTEL STANDBY)</a></li>
-            <li><a href="3.html">RESERVE</a></li>
-            <li><a href="4.html">미준수자 처리</a></li>
+            <li><a href="1.html" class="saw">공항 대기 (AIRPORT STANDBY)</a></li>
+            <li><a href="2.html" class="saw" id="active">자택/호텔 대기 (HOME/HOTEL STANDBY)</a></li>
+            <li><a href="3.html" class="saw">RESERVE</a></li>
+            <li><a href="4.html" class="saw">미준수자 처리</a></li>
         </ol>
 
         <h2>자택/호텔 대기 (HOME/HOTEL STANDBY)</h2>
