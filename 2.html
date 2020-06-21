@@ -2,59 +2,36 @@
 <html>
     <head>
         <title>HOME/HOTEL STANDBY</title>
-        <meta charset="utf-8">
-        <!-- CSS 관련 참고사항 주석입니다.
-        1. 디자인에 관련된 CSS는 스타일태그에 넣어서 공통적용한다
-        2. body의 a태그에서 페이지제목을 보았다는 "saw"라고 보았다는 뜻. 같은 클래스로 묶고,
-           style에서 .saw선택자(점을붙여야 모든태그에서의 saw를 말한다)를 쓰고 property:valu;를 정한다
-        3. style에서 우선순위는 아래에있다.(위에서부터 순서되로 적용되니깐 결국 밑에 색깔이 최종)
-        4. a 태그내에 선택자는 띄어쓰기로 계속 쓸 수있다. id선택자(고유선택자)를 사용하여 active 태그를 만들고,
-           style에서 id가 #active인 놈을 찾아 색깔바꿔
-        5. 우선순위 : id선택자(#active) > class선택자(.saw) > tag선택자(a)
-
-
-        -->
-        <style>
-            
-            #active {
-                color:red;
-            }       
-            .saw {
-                color:gray;
-            }
-            a {
-                color:black;
-                text-decoration: none;
-            }
-            h1 {
-                font-size:45px; 
-                text-align: center;   
-            }
-        </style>
+        <meta charset="utf-8">  
+        <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
         <h1><a href="index.html">운항승무원 STANDBY 및 RESERVE 운영지침</a></h1>
-        <ol>
-            <li><a href="1.html" class="saw">공항 대기 (AIRPORT STANDBY)</a></li>
-            <li><a href="2.html" class="saw" id="active">자택/호텔 대기 (HOME/HOTEL STANDBY)</a></li>
-            <li><a href="3.html" class="saw">RESERVE</a></li>
-            <li><a href="4.html" class="saw">미준수자 처리</a></li>
-        </ol>
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">공항 대기 (AIRPORT STANDBY)</a></li>
+                <li><a href="2.html">자택/호텔 대기 (HOME/HOTEL STANDBY)</a></li>
+                <li><a href="3.html">RESERVE</a></li>
+                <li><a href="4.html">미준수자 처리</a></li>
+            </ol>
+            <div id="article">
+                <h2>자택/호텔 대기<br>(HOME/HOTEL STANDBY)</h2>
+                <p><strong>가.</strong> 자택/호텔 대기는 자택 또는 호텔에서 즉시 출발하여 비행 임무에 투입될 수 있는 상태로, 비행에 적합한 신체상태를 유지하여 대기하는 것을 말한다.</p>
+                <p><strong>나.</strong> 자택/호텔 대기는 개인별 월간 SKD에 사전에 명시되어야 한다. 단, 공항 대기 및 RESERVE로 부터 전환시와 비상시는 예외로 한다.</p>
+                <p><strong>다.</strong> 대기 상태 중 항시 연락이 가능하도록 하는 책임은 승무원에게 있다.</p>
+                <p><strong>라.</strong> 별도의 지시가 없을 경우 자택/호텔 대기는 매 1회에 12시간 미만으로 하며, 그 해당시간은 개인별 월간 SKD에 명시되어야 한다.<br>
+                   <strong> 지정된 대기 시간은 <u>회사 출두시각 기준</u>이며 해당 출두 시간 대 비행근무의 경우 대기 시간 이전에 회사는 임무 부여 가능하며 임무 부여시에는 대기 상태가 해지 된다.</strong></p>
+                <p><strong>마.</strong> 자택/호텔에서 대기하는 경우 비행 및 훈련지원에 한해 시뮬레이터 편조에 투입될 수 있다.</p>
+                <p><strong>바.</strong> 비행임무로 투입될 경우, 대기상태로 경과된 시간은 규정상 비행근무시간 (FLIGHT DUTY PERIOD) 제한에 포함되지 않는다.</p>
+                <p><strong>사.</strong> 자택/호텔에서 대기하는 일수는 규정상 휴식일수 및 최소 휴식시간에 포함되지 않는다.</p>
+                <p><strong>아.</strong> 동 대기의 연장은 24시간 전 통보로 연장될 수 있으며, 비상 시에는 12시간 전 통보로 연장할 수 있다.</p>
+                <p><strong>자.</strong> 편조된 SKD이 취소된 경우 별도 지시가 없으면 통보시점부터 12시간까지는 자택 대기로 바뀌며, 12시간 이후 잔여기간은 RESERVE로 바뀐다.</p>
+                
 
-        <h2>자택/호텔 대기 (HOME/HOTEL STANDBY)</h2>
-        <img src="airportstby.jpg" width="100%">
-            <a href="https://c130.tistory.com/" target="_blank">
-               하이퍼링크 연습</a>
-        <p>가. 자택/호텔 대기는 자택 또는 호텔에서 즉시 출발하여 비행 임무에 투입될 수 있는 상태로, 비행에 적합한 신체상태를 유지하여 대기하는 것을 말한다.</p>
-        <p>나. 자택/호텔 대기는 개인별 월간 SKD에 사전에 명시되어야 한다. 단, 공항 대기 및 RESERVE로 부터 전환시와 비상시는 예외로 한다.</p>
-        <p>다. 대기 상태 중 항시 연락이 가능하도록 하는 책임은 승무원에게 있다.</p>
-        <p>라. 별도의 지시가 없을 경우 자택/호텔 대기는 매 1회에 12시간 미만으로 하며, 그 해당시간은 개인별 월간 SKD에 명시되어야 한다.</p>
-            <strong> 지정된 대기 시간은 <u>회사 출두시각 기준</u>이며 해당 출두 시간 대 비행근무의 경우 대기 시간 이전에 회사는 임무 부여 가능하며 임무 부여시에는 대기 상태가 해지 된다.</strong></p>
-        <p>마. 자택/호텔에서 대기하는 경우 비행 및 훈련지원에 한해 시뮬레이터 편조에 투입될 수 있다.</p>
-        <p>바. 비행임무로 투입될 경우, 대기상태로 경과된 시간은 규정상 비행근무시간 (FLIGHT DUTY PERIOD) 제한에 포함되지 않는다.</p>
-        <p>사. 자택/호텔에서 대기하는 일수는 규정상 휴식일수 및 최소 휴식시간에 포함되지 않는다.</p>
-        <p>아. 동 대기의 연장은 24시간 전 통보로 연장될 수 있으며, 비상 시에는 12시간 전 통보로 연장할 수 있다.</p>
-        <p>자. 편조된 SKD이 취소된 경우 별도 지시가 없으면 통보시점부터 12시간까지는 자택 대기로 바뀌며, 12시간 이후 잔여기간은 RESERVE로 바뀐다.</p>
+            </div>
+        </div>
+        
+
+        
     </body>
 </html>
